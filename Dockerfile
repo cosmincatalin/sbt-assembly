@@ -32,6 +32,6 @@ ENV PROJECT_DIR /scala-project
 
 VOLUME $PROJECT_DIR
 
-WORKDIR $BUILD_PATH
+WORKDIR $PROJECT_DIR
 
 CMD ["sbt", "assembly"]
