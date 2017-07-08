@@ -27,3 +27,11 @@ sbt \
 -y
 
 RUN sbt -sbt-version 0.13.12 clean
+
+ENV PROJECT_DIR /scala-project
+
+VOLUME $PROJECT_DIR
+
+WORKDIR $BUILD_PATH
+
+CMD ["sbt", "assembly"]
